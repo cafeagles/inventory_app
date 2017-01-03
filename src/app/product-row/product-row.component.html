@@ -1,0 +1,11 @@
+<div class="media-left">
+  <a href="#">
+    <app-product-image [product]="product"></app-product-image>
+  </a>
+</div>
+<div class="media-body">
+  <h4 class="media-heading">{{product.name}}</h4>
+  <app-product-department [product]="product"></app-product-department>
+  {{product.sku}}
+  <app-product-price-display class="pull-right" [price]="product.price"></app-product-price-display>
+</div>
